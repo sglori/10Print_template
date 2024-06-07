@@ -1,0 +1,145 @@
+:root {
+  /* Spacing */
+  --spacer: 1rem;
+
+  /* Colors */
+  --bg-color: rgb(255, 255, 255, 0.8);
+  --text-color: rgb(0, 0, 0);
+  --link-color: rgb(255, 0, 0);
+ 
+  /* Typographic Scale */
+  --ratio: 1.333;
+  --text-base: 1rem;
+  --text-md: calc(var(--text-base) * var(--ratio));
+  --text-sm: calc(var(--text-base) / var(--ratio));
+}
+.botton1{
+  background-color: rgb(255, 255, 255, 0.8);
+  color: black;
+  border:2px solid red;
+  border-radius: 10px;
+}
+.botton2{
+  background-color: rgb(255, 255, 255, 0.8);
+  color: black;
+  font-size: 20px;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body{
+  font-size: var(--text-base);
+  font-family: 'Roboto Mono' ;
+  line-height: var(--ratio);
+  background: var(--bg-color);
+}
+
+main {
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+
+  display: grid;
+  grid-template-columns: var(--spacer) 1fr var(--spacer);
+  grid-template-rows: auto 1fr auto;
+  justify-items: start;
+}
+
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1;
+
+  padding: var(--spacer);
+  
+  z-index: 2;
+}
+
+.header-title {
+  font-size: var(--text-md);
+  background: var(--bg-color);
+  border-radius: 10px;
+  border: 2px solid red;
+}
+
+.div {
+  grid-column: 2;
+  grid-row: 2;
+
+  font-size: var(--text-md);
+
+  padding: var(--spacer);
+  z-index: 2;
+  text-align: center;
+}
+
+.div-list {
+  padding: var(--spacer);
+  background: var(--bg-color);
+}
+.div-list li {
+  display: inline-block; /* Mostra gli elementi della lista in linea */
+  margin-right: 10px; /* Aggiungi spazio tra gli elementi */
+  margin-bottom: 20px;
+}
+
+
+.info{
+  grid-column: 2;
+  grid-row: 3;
+  padding: var(--spacer);
+  z-index: 2;
+  background: var(--bg-color);
+  border-radius: 10px;
+  border: 2px solid red;
+  margin-bottom: 6px;
+}
+
+.info-list{
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.info-title{
+  font-size: var(--text-base);
+ }
+ 
+.text-sm{ 
+  font-size: var(--text-sm); 
+}
+
+.rounded-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.container {
+display: flex;
+flex-direction: row; /* Allinea gli elementi orizzontalmente */
+gap: 10px; /* Spazio di 10px tra gli elementi */
+}
+
+.code{
+color: red;
+}
