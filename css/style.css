@@ -38,8 +38,8 @@ main {
 .image{
   width: 200px;
   height: 200px;
-  border: 6px solid red;
   border-radius: 50px;
+  border: 6px solid red;
 }
 
 .wrapper {
