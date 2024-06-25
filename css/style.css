@@ -13,19 +13,6 @@
   --text-md: calc(var(--text-base) * var(--ratio));
   --text-sm: calc(var(--text-base) / var(--ratio));
 }
-.botton1{
-  background-color: rgb(255, 255, 255, 0.8);
-  color: black;
-  border:2px solid red;
-  border-radius: 10px;
-}
-.botton2{
-  background-color: rgb(255, 255, 255, 0.8);
-  color: black;
-  font-size: 20px;
-  border: 2px solid red;
-  border-radius: 100%;
-}
 
 * {
   margin: 0;
@@ -51,7 +38,7 @@ main {
 .image{
   width: 200px;
   height: 200px;
-  border: 2px solid red;
+  border: 6px solid red;
   border-radius: 50px;
 }
 
@@ -79,10 +66,9 @@ main {
   font-size: var(--text-md);
   background: var(--bg-color);
   border-radius: 10px;
-  border: 2px solid red;
 }
 
-.div {
+.grid {
   grid-column: 2;
   grid-row: 2;
 
@@ -90,7 +76,6 @@ main {
 
   padding: var(--spacer);
   z-index: 2;
-  text-align: center;
 }
 
 .div-list {
@@ -111,7 +96,6 @@ main {
   z-index: 2;
   background: var(--bg-color);
   border-radius: 10px;
-  border: 2px solid red;
   margin-bottom: 6px;
 }
 
